@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Updated Site</title>
+
+<style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+    .navbar{
+        width:100%;
+        background:#ff6b6b;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px 50px;
+    }
+    .logo{
+        font-size:22px;
+        font-weight:bold;
+        color:white;
+        background:#0d1a26;
+        flex-wrap:nowrap;
+        display:flex;
+        align-items:center;
+        padding: 15px 30px;
+    }
+    .navbar ul{
+        display:flex;
+        gap:35px;
+        list-style:none;
+    }
+    .navbar a{
+        color:white;
+        font-weight:bold;
+        text-decoration:none;
+    }
+    .navbar a:hover{ text-decoration:underline; }
+    .hero{
+        height:60vh;
+        background:url("https://images.unsplash.com/photo-1751517298236-b9150faa3dfd?q=80") center/cover;
+        display:flex;flex-direction:column;
+        justify-content:center;align-items:center;
+        color:white;text-shadow:0 0 8px black;
+    }
+    .hero h1{font-size:40px;margin-bottom:8px;}
+    .hero p{font-size:18px;width:55%;text-align:center;}
+    .row{
+        display:grid;
+        grid-template-columns:1fr 1fr; 
+        height:320px;
+    }
+
+    .about{
+        background:#1e2d3b;color:white;padding:40px;
+    }
+    .about h2{font-size:26px;margin-bottom:10px;}
+    .about p{line-height:1.5em;}
+
+    .image{
+        background:url("https://images.unsplash.com/photo-1751517298236-b9150faa3dfd?q=80") center/cover;
+    }
+
+    .bottom-row{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        height:250px;
+    }
+
+    .offer{
+        background:#f4cf64;display:flex;flex-direction:column;
+        justify-content:center;align-items:center;
+    }
+    .offer button{
+        margin-top:10px;padding:8px 15px;border:none;
+        background:#122530;color:white;border-radius:4px;
+        cursor:pointer;
+    }
+
+    .contact{
+        background:#61c4a8;padding:30px;color:white;
+    }
+    .contact h2{margin-bottom:8px;}
+    .contact ul li{margin-bottom:6px;}
+</style>
+</head>
+
+<body>
+<div class="navbar">
+    <div class="logo">LOGO</div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+<div class="hero">
+    <h1>Welcome to Our Site</h1>
+    <p>Discover amazing experiences and transform your journey with us.</p>
+</div>
+<div class="row">
+    <div class="about">
+        <h2>About Our Company</h2>
+        <p>We provide innovative solutions and help businesses grow with expert guidance & customer-focused service.</p>
+        <p>Trusted by thousands, proven in results.</p>
+    </div>
+
+    <div class="image"></div>
+</div>
+<div class="bottom-row">
+    <div class="offer">
+        <h2>Special Offer!</h2>
+        <button>Get Started</button>
+    </div>
+
+    <div class="contact">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>✔ 24/7 Support</li>
+            <li>✔ Industry Experts</li>
+            <li>✔ Guaranteed Satisfaction</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
+
